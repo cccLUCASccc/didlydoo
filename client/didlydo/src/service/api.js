@@ -7,14 +7,14 @@ const api = axios.create({
     }
 })
 
-// GET METHOD:
-// -----------
+// GET:
+// ----
 export const getEvents = () => api.get('/api/events/')
 export const getEvent = (id) =>  {return api.get(`/api/events/${id}`)
 }
 
-// POST METHOD:
-// ------------
+// POST:
+// -----
 export const addEvent = (e) => {
     return api.post('/api/events', e)}
 
@@ -22,6 +22,20 @@ export const addEvent = (e) => {
 export const addAttendee = (e, id) => {
     return api.post(`/api/events/${id}/attend`, e)
 }
+
+// PATCH:
+// ------
+export const isAvailable = (e, id) => {
+    return api.patch(`/api/events/${id}/attend`, e)
+}
+
+// DELETE:
+// -------
+
+export const deleteEvent = (id) => {
+    return api.delete(`/api/events/${id}/`)
+}
+
 
 export default api;
 

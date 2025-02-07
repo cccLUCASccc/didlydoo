@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import {getEvents} from "../service/api"
+import {getEvents, deleteEvent} from "../service/api"
 import { useEffect, useState } from "react"
 import Input from "./Input"
 import '../style/Home.css'
@@ -24,6 +24,19 @@ const Home = () => {
 
     const handleChangeNumber = (e) => {
         setNum(Number(e.target.value))
+    }
+
+    const handleDelete = async (e) => {
+        
+        const isConfirmed = window.confirm("Are you sure you want to delete this event?");
+        if (!isConfirmed) return;
+
+        try {
+            await deleteEvent(e.id)
+            setEvents(events.filter(event => event.id !== e.id));
+        } catch (err) {
+            console.log('Error', err)
+        }
     }
 
     return (
@@ -55,14 +68,14 @@ const Home = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {[...new Set(events[num - 1].dates.flatMap(d => (d.attendees.map(a => a.name ,setDate(a.date)))))].map((name, i) => (
+                                {[...new Set(events[num - 1].dates.flatMap(d => (d.attendees.map(a => a.name))))].map((name, i) => (
                                     <tr>
                                         <td><p key={i}>{name}</p></td>
-                                        {events[num-1].dates.map(() =>
-                                            <td><Checkbox nom={name} date={date}/></td>
+                                        {events[num-1].dates.map((d) =>
+                                            <td><Checkbox id={events[num-1].id} nom={name} date={d}/></td>
                                         )}
                                     </tr>))}
-                            </tbody>
+                            </tbody>                          
                         </table>
                     </div>
                     <Input id = {events[num-1].id}/>
@@ -73,6 +86,7 @@ const Home = () => {
                     <div key={index}>
                         <h3>{e.name} (by {e.author})</h3>
                         <p>{e.description}</p>
+                        <button onClick={() => handleDelete(e)}>Delete Event</button>
                         <div >
                             <table  border={1}>
                                 <thead>
@@ -85,10 +99,10 @@ const Home = () => {
                                     {[...new Set(e.dates.flatMap(d => (d.attendees.map(a => a.name))))].map((name, i) => (
                                         <tr>
                                             <td><p key={i}>{name}</p></td>
-                                            {e.dates.map(() =>
-                                                <td><Checkbox /></td>
+                                            {e.dates.map((d) =>
+                                                <td><Checkbox id={e.id}nom={name} date={d}/></td>
                                             )}
-                                        </tr>))}
+                                        </tr>))}                                   
                                 </tbody>
                             </table>
                         </div>

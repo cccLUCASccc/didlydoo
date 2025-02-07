@@ -1,14 +1,26 @@
 import { useState} from 'react';
 import '../style/Checkbox.css'
+import { isAvailable } from '../service/api';
 
-const Checkbox = (nom, date) => {
+const Checkbox = ({id, nom, date}) => {
     const [isChecked, setIschecked] = useState(false)
 
-    const handleCheckboxChange = () =>{
-        console.log({date})
-        console.log({nom})
-        setIschecked(!isChecked)
-    }
+     const handleAddAvailable = async () => {
+            try {
+                const newIsChecked = !isChecked
+                setIschecked(newIsChecked)
+                await isAvailable({
+                    "name": nom,
+                    "dates":[{
+                        "date":date,
+                        "available": newIsChecked
+                        }]
+                }, id)
+            } catch (err) {
+                console.log('Error', err)
+                setIschecked(isChecked)
+            }
+        }
 
     return (
         <form>
@@ -17,7 +29,7 @@ const Checkbox = (nom, date) => {
                     className="checkbox" 
                     type="checkbox" 
                     checked={isChecked} 
-                    onChange={handleCheckboxChange} 
+                    onChange={handleAddAvailable} 
                 />
                 <p>{isChecked ? '👌' : '🚫'}</p>
             </div>
