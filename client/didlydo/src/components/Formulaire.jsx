@@ -26,7 +26,10 @@ const handleSetDescription = (e) => {
     setDescription(e.target.value)
 }
 const handleSetDate = (e) => {
-    setDates([...dates, e.target.value])
+    if(dates.length < 5)
+        setDates([...dates, e.target.value])
+    else
+        alert("Vous ne pouvez pas ajouter de dates supplémentaire.")
 }
 
 const handleAddEvent = async () => {
@@ -49,8 +52,8 @@ const handleAddEvent = async () => {
 // ----------------------------------------------
     return (
         <div className="container">
-            <h2>Add a new event:</h2>
-            <form action="submit">
+            <h2>Add a new event</h2>
+            <form class="input-group"action="submit">
                 <h3>Name of the event:</h3>
                 <input 
                     type="text"
@@ -70,7 +73,8 @@ const handleAddEvent = async () => {
                     placeholder="Enter your lastname..."
                 />
                 <h3>Description of the event:</h3>
-                <textarea 
+                <textarea
+                    class = "description" 
                     onChange={handleSetDescription}
                     placeholder="Enter a description for this event..."
                 >
@@ -79,18 +83,11 @@ const handleAddEvent = async () => {
                 <div className ="dates">
                     <input type="date" 
                     onChange={handleSetDate}/>
-                    <input type="date" 
-                    onChange={handleSetDate}/>
-                    <input type="date" 
-                    onChange={handleSetDate}/>
-                    <input type="date" 
-                    onChange={handleSetDate}/>
-                    <input type="date" 
-                    onChange={handleSetDate}/>
+                    <table><tr>{dates.map((d => <td>{d}</td>))}</tr></table>
                 </div>
 
                 <Link to='/'>
-                    <button onClick={handleAddEvent}>Submit</button>
+                    <button class="btn btn-primary" onClick={handleAddEvent}>Submit</button>
                 </Link>
             </form>
         </div>

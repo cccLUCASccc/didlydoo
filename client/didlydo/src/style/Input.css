@@ -1,0 +1,23 @@
+:root{
+    --couleur_principale: #1A1A1D;
+    --couleur_police1: #3B1C32;
+    --couleur_police2: #6A1E55;
+    --couleur_interactable: #A64D79;
+
+    --police: "Silkscreen", serif;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--couleur_police2);
+    /* background-color: var(--couleur_interactable); */
+    /* margin-top: 25px;
+    margin-bottom: 25px; */
+}
+.form input{
+    position: relative;
+    top: 12px;
+}

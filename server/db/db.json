@@ -1,41 +1,379 @@
 [
   {
-    "id": "f5b6564b5dc4",
-    "name": "My sweet 16",
-    "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
-    "author": "John Doe",
+    "id": "abb2ff24e2ce",
+    "name": "Quit cheet's creek",
+    "author": "lucas cloes",
+    "description": "a lot of fun",
     "dates": [
-      "2025-03-17",
-      "2025-03-18",
-      "2025-03-21",
-      "2025-03-22"
+      "2025-02-15",
+      "2025-03-01",
+      "2025-04-06"
     ],
+    "created_at": "2025-02-10T15:31:15.489Z",
+    "num_modification": 0,
+    "last_modification": "2025-02-10T15:31:15.489Z",
     "attendees": [
       {
-        "name": "Michou",
+        "name": "Johnny rose",
         "dates": [
           {
-            "date": "2025-03-17",
+            "date": "2025-02-15",
+            "available": false
+          },
+          {
+            "date": "2025-03-01",
+            "available": false
+          },
+          {
+            "date": "2025-04-06",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Moira rose",
+        "dates": [
+          {
+            "date": "2025-02-15",
+            "available": false
+          },
+          {
+            "date": "2025-03-01",
+            "available": false
+          },
+          {
+            "date": "2025-04-06",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "David Rose",
+        "dates": [
+          {
+            "date": "2025-02-15",
+            "available": false
+          },
+          {
+            "date": "2025-03-01",
+            "available": true
+          },
+          {
+            "date": "2025-04-06",
             "available": false
           }
         ]
       },
       {
-        "name": "Jean-Daniel",
+        "name": "Alexis Rose",
         "dates": [
           {
-            "date": "2025-03-17",
+            "date": "2025-02-15",
             "available": false
           },
           {
-            "date": "2025-03-21",
+            "date": "2025-03-01",
+            "available": false
+          },
+          {
+            "date": "2025-04-06",
+            "available": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "515691d4a85c",
+    "name": "Make blue cristal",
+    "author": "lucas cloes",
+    "description": "don't tell to anyone",
+    "dates": [
+      "2025-02-22",
+      "2025-02-28"
+    ],
+    "created_at": "2025-02-10T15:28:23.393Z",
+    "num_modification": 0,
+    "last_modification": "2025-02-10T15:28:23.393Z",
+    "attendees": [
+      {
+        "name": "walter white",
+        "dates": [
+          {
+            "date": "2025-02-22",
+            "available": false
+          },
+          {
+            "date": "2025-02-28",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "jesse pinkman",
+        "dates": [
+          {
+            "date": "2025-02-22",
+            "available": false
+          },
+          {
+            "date": "2025-02-28",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "gus fring",
+        "dates": [
+          {
+            "date": "2025-02-22",
+            "available": false
+          },
+          {
+            "date": "2025-02-28",
             "available": true
           }
         ]
       }
+    ]
+  },
+  {
+    "id": "86a8968fed40",
+    "name": "My non happy birthsday party",
+    "author": "lucas cloes",
+    "description": "it's a great day",
+    "dates": [
+      "2025-03-10",
+      "2025-04-10",
+      "2025-05-10",
+      "2025-06-10",
+      "2025-05-10"
     ],
-    "created_at": "2024-11-15T00:00",
-    "num_modification": 3,
-    "last_modification": "2024-11-15T02:15"
+    "created_at": "2025-02-10T14:51:05.134Z",
+    "num_modification": 0,
+    "last_modification": "2025-02-10T14:51:05.134Z",
+    "attendees": [
+      {
+        "name": "lucas",
+        "dates": [
+          {
+            "date": "2025-03-10",
+            "available": false
+          },
+          {
+            "date": "2025-04-10",
+            "available": false
+          },
+          {
+            "date": "2025-05-10",
+            "available": false
+          },
+          {
+            "date": "2025-05-10",
+            "available": false
+          },
+          {
+            "date": "2025-06-10",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "daphy",
+        "dates": [
+          {
+            "date": "2025-03-10",
+            "available": false
+          },
+          {
+            "date": "2025-04-10",
+            "available": false
+          },
+          {
+            "date": "2025-05-10",
+            "available": false
+          },
+          {
+            "date": "2025-05-10",
+            "available": false
+          },
+          {
+            "date": "2025-06-10",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "elmer",
+        "dates": [
+          {
+            "date": "2025-03-10",
+            "available": true
+          },
+          {
+            "date": "2025-04-10",
+            "available": false
+          },
+          {
+            "date": "2025-05-10",
+            "available": false
+          },
+          {
+            "date": "2025-05-10",
+            "available": false
+          },
+          {
+            "date": "2025-06-10",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "bugs",
+        "dates": [
+          {
+            "date": "2025-03-10",
+            "available": false
+          },
+          {
+            "date": "2025-04-10",
+            "available": false
+          },
+          {
+            "date": "2025-05-10",
+            "available": false
+          },
+          {
+            "date": "2025-05-10",
+            "available": false
+          },
+          {
+            "date": "2025-06-10",
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8894bcf76feb",
+    "name": "The super duper event of all time.",
+    "author": "Lucas Cloes",
+    "description": "The most valuable and famous event of all time. Come in fast !!!",
+    "dates": [
+      "2025-02-13",
+      "2025-02-14",
+      "2025-02-15",
+      "2025-02-23",
+      "2025-02-27"
+    ],
+    "created_at": "2025-02-10T14:40:41.742Z",
+    "num_modification": 0,
+    "last_modification": "2025-02-10T14:40:41.742Z",
+    "attendees": [
+      {
+        "name": "lucas",
+        "dates": [
+          {
+            "date": "2025-02-13",
+            "available": false
+          },
+          {
+            "date": "2025-02-14",
+            "available": false
+          },
+          {
+            "date": "2025-02-15",
+            "available": false
+          },
+          {
+            "date": "2025-02-23",
+            "available": false
+          },
+          {
+            "date": "2025-02-27",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "lucas2",
+        "dates": [
+          {
+            "date": "2025-02-13",
+            "available": false
+          },
+          {
+            "date": "2025-02-14",
+            "available": false
+          },
+          {
+            "date": "2025-02-15",
+            "available": false
+          },
+          {
+            "date": "2025-02-23",
+            "available": true
+          },
+          {
+            "date": "2025-02-27",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "lucas3",
+        "dates": [
+          {
+            "date": "2025-02-13",
+            "available": true
+          },
+          {
+            "date": "2025-02-14",
+            "available": false
+          },
+          {
+            "date": "2025-02-15",
+            "available": false
+          },
+          {
+            "date": "2025-02-23",
+            "available": false
+          },
+          {
+            "date": "2025-02-27",
+            "available": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fd766765e4b7",
+    "name": "Un autre méga evenr",
+    "author": "lucas cloes",
+    "description": "un mega MEGA event",
+    "dates": [
+      "2025-02-12",
+      "2025-02-20"
+    ],
+    "created_at": "2025-02-10T12:10:56.195Z",
+    "num_modification": 0,
+    "last_modification": "2025-02-10T12:10:56.195Z",
+    "attendees": [
+      {
+        "name": "lucas",
+        "dates": [
+          {
+            "date": "2025-02-12",
+            "available": false
+          },
+          {
+            "date": "2025-02-20",
+            "available": true
+          }
+        ]
+      }
+    ]
   }
 ]

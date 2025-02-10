@@ -1,17 +1,38 @@
-.dates{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin-left: 40px;
-    margin-bottom: 30px;
-}
-
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    max-width: 80%;
+    margin-top: 5%;
     height: auto;
     text-align: center;
+}
+.dates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    /* margin-left: 40px; */
+    margin-bottom: 30px;
+}
+.dates input{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    max-width: 25%;
+}
+.description{
+    margin-bottom: 25px;
+}
+input{
+    margin-bottom: 25px;
+
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+.dates p{
+    background-color: var(--couleur_police1);
 }
