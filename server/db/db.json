@@ -1,5 +1,191 @@
 [
   {
+    "id": "91d627bb3b9b",
+    "name": "Conquer the galaxy",
+    "author": "lucas cloes",
+    "description": "Become the master of the galaxy",
+    "dates": [
+      "2025-03-10",
+      "2025-03-13",
+      "2025-04-13",
+      "2025-04-25",
+      "2025-05-03"
+    ],
+    "created_at": "2025-02-10T15:46:58.848Z",
+    "num_modification": 0,
+    "last_modification": "2025-02-10T15:46:58.848Z",
+    "attendees": [
+      {
+        "name": "Dark vador",
+        "dates": [
+          {
+            "date": "2025-03-10",
+            "available": true
+          },
+          {
+            "date": "2025-03-13",
+            "available": false
+          },
+          {
+            "date": "2025-04-13",
+            "available": true
+          },
+          {
+            "date": "2025-04-25",
+            "available": true
+          },
+          {
+            "date": "2025-05-03",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Galaxar",
+        "dates": [
+          {
+            "date": "2025-03-10",
+            "available": false
+          },
+          {
+            "date": "2025-03-13",
+            "available": false
+          },
+          {
+            "date": "2025-04-13",
+            "available": true
+          },
+          {
+            "date": "2025-04-25",
+            "available": true
+          },
+          {
+            "date": "2025-05-03",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "cronos",
+        "dates": [
+          {
+            "date": "2025-03-10",
+            "available": false
+          },
+          {
+            "date": "2025-03-13",
+            "available": true
+          },
+          {
+            "date": "2025-04-13",
+            "available": false
+          },
+          {
+            "date": "2025-04-25",
+            "available": true
+          },
+          {
+            "date": "2025-05-03",
+            "available": false
+          }
+        ]
+      },
+      {
+        "name": "thanos",
+        "dates": [
+          {
+            "date": "2025-03-10",
+            "available": true
+          },
+          {
+            "date": "2025-03-13",
+            "available": false
+          },
+          {
+            "date": "2025-04-13",
+            "available": false
+          },
+          {
+            "date": "2025-04-25",
+            "available": true
+          },
+          {
+            "date": "2025-05-03",
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "246bd768e1ad",
+    "name": "make a lot of money",
+    "author": "lucas cloes",
+    "description": "money money money",
+    "dates": [
+      "2025-03-01"
+    ],
+    "created_at": "2025-02-10T15:44:04.514Z",
+    "num_modification": 0,
+    "last_modification": "2025-02-10T15:44:04.514Z",
+    "attendees": [
+      {
+        "name": "Balthazar picsou",
+        "dates": [
+          {
+            "date": "2025-03-01",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Donald duck",
+        "dates": [
+          {
+            "date": "2025-03-01",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "riri",
+        "dates": [
+          {
+            "date": "2025-03-01",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "fifi",
+        "dates": [
+          {
+            "date": "2025-03-01",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "loulou",
+        "dates": [
+          {
+            "date": "2025-03-01",
+            "available": true
+          }
+        ]
+      },
+      {
+        "name": "Flagada jones",
+        "dates": [
+          {
+            "date": "2025-03-01",
+            "available": true
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "abb2ff24e2ce",
     "name": "Quit cheet's creek",
     "author": "lucas cloes",
@@ -22,7 +208,7 @@
           },
           {
             "date": "2025-03-01",
-            "available": false
+            "available": true
           },
           {
             "date": "2025-04-06",
@@ -39,7 +225,7 @@
           },
           {
             "date": "2025-03-01",
-            "available": false
+            "available": true
           },
           {
             "date": "2025-04-06",
@@ -60,7 +246,7 @@
           },
           {
             "date": "2025-04-06",
-            "available": false
+            "available": true
           }
         ]
       },
@@ -73,7 +259,7 @@
           },
           {
             "date": "2025-03-01",
-            "available": false
+            "available": true
           },
           {
             "date": "2025-04-06",
@@ -343,34 +529,6 @@
           {
             "date": "2025-02-27",
             "available": false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "fd766765e4b7",
-    "name": "Un autre méga evenr",
-    "author": "lucas cloes",
-    "description": "un mega MEGA event",
-    "dates": [
-      "2025-02-12",
-      "2025-02-20"
-    ],
-    "created_at": "2025-02-10T12:10:56.195Z",
-    "num_modification": 0,
-    "last_modification": "2025-02-10T12:10:56.195Z",
-    "attendees": [
-      {
-        "name": "lucas",
-        "dates": [
-          {
-            "date": "2025-02-12",
-            "available": false
-          },
-          {
-            "date": "2025-02-20",
-            "available": true
           }
         ]
       }
